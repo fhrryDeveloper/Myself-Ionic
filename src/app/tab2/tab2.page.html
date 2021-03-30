@@ -15,3 +15,159 @@
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>
+
+<ion-app>
+  <ion-split-pane when="sm" content-id="main-content">
+    <ion-menu content-id="main-content">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+        <ion-list>
+          <ion-list-header>
+            Navigate
+          </ion-list-header>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item button>
+              <ion-icon slot="start" name='home'></ion-icon>
+              <ion-label>
+                Home
+              </ion-label>
+            </ion-item>
+            <ion-item button>
+              <ion-icon slot="start" name='settings'></ion-icon>
+              <ion-label>
+                Setting
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-toggle>
+              <ion-button>
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+              </ion-button>
+            </ion-menu-toggle>
+          </ion-buttons>
+          <ion-title>Header</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h1>Main Content</h1>
+        <ion-grid>
+            <ion-row>
+              <ion-col size="12">
+                <div class="ion-text-uppercase">
+                  <h3>text-uppercase</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+                </div>
+              </ion-col>
+              <ion-col class="ion-hide">
+                <div class="ion-text-lowercase">
+                  <h3>text-lowercase</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+                </div>
+              </ion-col>
+              <ion-col>
+                <div class="ion-text-capitalize">
+                  <h3>text-capitalize</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+                </div>
+              </ion-col>
+              <ion-col>
+                <div class="ion-lg-text-nowrap">
+                  <h3>text-justify</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-float-left">
+                <div>
+                  <h3>float-left</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+                </div>
+              </ion-col>
+              <ion-col class="ion-float-right">
+                <div>
+                  <h3>float-right</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-padding">
+                <div>
+                  padding
+                </div>
+              </ion-col>
+              <ion-col class="ion-padding-top">
+                <div>
+                  padding-top
+                </div>
+              </ion-col>
+              <ion-col class="ion-padding-start">
+                <div>
+                  padding-start
+                </div>
+              </ion-col>
+              <ion-col class="ion-padding-end">
+                <div>
+                  padding-end
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-padding-bottom">
+                <div>
+                  padding-bottom
+                </div>
+              </ion-col>
+              <ion-col class="ion-padding-vertical">
+                <div>
+                  padding-vertical
+                </div>
+              </ion-col>
+              <ion-col class="ion-padding-horizontal">
+                <div>
+                  padding-horizontal
+                </div>
+              </ion-col>
+              <ion-col class="ion-no-padding">
+                <div>
+                  no-padding
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="6">
+                <div>
+                  1 of 3
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  2 of 3
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  3 of 3
+                </div>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+      </ion-content>
+    </div>
+
+  </ion-split-pane>
+</ion-app>
